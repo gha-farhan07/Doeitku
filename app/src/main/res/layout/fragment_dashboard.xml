@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.dashboard.DashboardFragment"
+
+    >
+
+
+    <View
+        android:id="@+id/income_rectangle"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_1"
+        app:layout_constraintEnd_toStartOf="@+id/expenses_rectangle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/income_textview"
+        style="@style/income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/income"
+        app:layout_constraintBottom_toBottomOf="@+id/income_rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/income_rectangle"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/income_rectangle"
+        app:layout_constraintTop_toTopOf="@+id/income_rectangle"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/income_amount_Textview2"
+        style="@style/rp_250000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rp 0"
+        android:gravity="center_horizontal|top"
+        app:layout_constraintEnd_toEndOf="@+id/income_textview"
+        app:layout_constraintStart_toStartOf="@+id/income_textview"
+        app:layout_constraintTop_toBottomOf="@+id/income_textview" />
+
+    <View
+        android:id="@+id/expenses_rectangle"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rectangle_1"
+        app:layout_constraintBottom_toBottomOf="@+id/income_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/income_rectangle"
+        app:layout_constraintTop_toTopOf="@+id/income_rectangle" />
+
+    <TextView
+        android:id="@+id/expanse_textview"
+        style="@style/income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal|top"
+        android:text="@string/expenses"
+        app:layout_constraintBottom_toBottomOf="@+id/expenses_rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/expenses_rectangle"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/expenses_rectangle"
+        app:layout_constraintTop_toTopOf="@+id/expenses_rectangle"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/expense_amount_Textview"
+        style="@style/rp_250000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal|top"
+        android:text="Rp 0"
+        app:layout_constraintEnd_toEndOf="@+id/expanse_textview"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/expanse_textview"
+        app:layout_constraintTop_toBottomOf="@+id/expanse_textview" />
+
+
+    <TextView
+        android:id="@+id/total_balance"
+        style="@style/total_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/total_balan"
+        app:layout_constraintStart_toStartOf="@+id/income_rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/income_rectangle" />
+
+    <TextView
+        android:id="@+id/total_balance_amount"
+        style="@style/total_balance_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rp 0"
+
+        app:layout_constraintStart_toStartOf="@+id/total_balance"
+        app:layout_constraintTop_toBottomOf="@+id/total_balance" />
+
+    <ImageView
+        android:id="@+id/btnAdd"
+        android:layout_width="45dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/ic_tambah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/text_recent_transaction"
+        style="@style/total_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Recent Transaction"
+        app:layout_constraintStart_toStartOf="@+id/total_balance_amount"
+        app:layout_constraintTop_toBottomOf="@+id/total_balance_amount" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnAdd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text_recent_transaction"
+        app:layout_constraintTop_toBottomOf="@+id/text_recent_transaction"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/item_transaction" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

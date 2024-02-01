@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.uang.ui.fragment.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_addTranscationActivity"
+            app:destination="@id/addTranscationActivity" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_transactionDetailsFragment"
+            app:destination="@id/transactionDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allTransactionFragment"
+        android:name="com.example.uang.ui.fragment.alltransaction.AllTransactionFragment"
+        android:label="fragment_all_transaction"
+        tools:layout="@layout/fragment_all_transaction" >
+        <action
+            android:id="@+id/action_allTransactionFragment_to_transactionDetailsFragment"
+            app:destination="@id/transactionDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.uang.ui.fragment.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <activity
+        android:id="@+id/addTranscationActivity"
+        android:name="com.example.uang.ui.AddTranscationActivity"
+        android:label="activity_add_transcation"
+        tools:layout="@layout/activity_add_transcation" >
+        <argument
+            android:name="dataTransaction"
+            app:argType="com.example.uang.room.entities.IncomeEntities" />
+        <argument
+            android:name="FromEditData"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </activity>
+    <fragment
+        android:id="@+id/transactionDetailsFragment"
+        android:name="com.example.uang.ui.fragment.transactiondetail.TransactionDetailsFragment"
+        android:label="fragment_transaction_details"
+        tools:layout="@layout/fragment_transaction_details" >
+        <argument
+            android:name="data"
+            app:argType="com.example.uang.room.entities.IncomeEntities" />
+        <action
+            android:id="@+id/action_transactionDetailsFragment_to_editTransactionFragment"
+            app:destination="@id/editTransactionFragment" />
+        <action
+            android:id="@+id/action_transactionDetailsFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editTransactionFragment"
+        android:name="com.example.uang.ui.fragment.transactiondetail.EditTransactionFragment"
+        android:label="fragment_edit_transaction"
+        tools:layout="@layout/fragment_edit_transaction" >
+        <argument
+            android:name="dataTransaction"
+            app:argType="com.example.uang.room.entities.IncomeEntities" />
+        <action
+            android:id="@+id/action_editTransactionFragment_to_transactionDetailsFragment"
+            app:destination="@id/transactionDetailsFragment" />
+    </fragment>
+</navigation>

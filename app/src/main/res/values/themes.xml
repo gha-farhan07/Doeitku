@@ -1,0 +1,61 @@
+<resources>
+
+    <style name="Theme.Uang" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorOnPrimary">@color/coloronPrimary</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorOnSecondary">@color/coloronPrimary</item>
+
+    </style>
+
+    <style name="bottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="backgroundTint">@color/surfaceContainer</item>
+        <item name="itemTextColor">@color/accentColor</item>
+        <item name="itemIconTint">@color/accentColor</item>
+
+    </style>
+
+    <style name="modal" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_dialog</item>
+    </style>
+
+    <style name="bottom_dialog" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/modal</item>
+    </style>
+
+    <style name="income">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/coloronPrimary</item>
+        <item name="fontFamily">@font/lato_black</item>
+    </style>
+
+
+    <style name="rp_250000">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="total_balance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="lineHeight">18sp</item>
+    </style>
+
+    <style name="total_balance_amount">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="fontFamily">@font/lato_black</item>
+
+    </style>
+
+    <style name="selector_button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/textColor</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="boxCornerRadiusTopStart">15dp</item>
+        <item name="boxCornerRadiusBottomStart">15dp</item>
+    </style>
+
+</resources>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dominantColor">#222831</color>
+    <color name="primaryColor">#393E46</color>
+    <color name="secondaryColor">#00ADB5</color>
+    <color name="accentColor">#EEEEEE</color>
+    <color name="textColor">#FFF</color>
+    <color name="surfaceContainer">#1f242c</color>
+    <color name="coloronPrimary">#FFF</color>
+    <color name="transparent">#0000FFFF</color>
+
+</resources>

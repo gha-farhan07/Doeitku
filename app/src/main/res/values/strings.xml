@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Uang</string>
+    <string name="income">Income</string>
+    <string name="rp_250000">Rp. 25000</string>
+    <string name="expenses">Expenses</string>
+    <string name="total_balan">Total Balance</string>
+    <string name="total_balance_amount">Rp. 25000</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title</string>
+    <string name="amount">Amount</string>
+    <string name="date">Date</string>
+    <string name="note">Note</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="food">Food</string>
+    <string name="shopping">Shopping</string>
+    <string name="transport">Transport</string>
+    <string name="health">Health</string>
+    <string name="education">Education</string>
+    <string name="other">Other</string>
+    <string name="dashboard_Fragment">Dashboard</string>
+    <string name="all_transaction">Transaction</string>
+    <string name="profile_fragment">Profile</string>
+    <string name="category">Category</string>
+    <string name="Trash">Trash</string>
+    <string name="transaction_details">Transaction Detail</string>
+    <string name="are_you_sure_want_to_delete_the_transaction">Are you sure want to delete the transsaction</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+
+</resources>

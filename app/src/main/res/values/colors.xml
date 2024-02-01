@@ -1,0 +1,26 @@
+<resources>
+   <color name="dominantColor">#F9F7F7</color>
+   <color name="primaryColor">#DBE2EF</color>
+   <color name="secondaryColor">#3F72AF</color>
+   <color name="accentColor">#112D4E</color>
+   <color name="textColor">#000</color>
+   <color name="surfaceContainer">#e0dede</color>
+   <color name="coloronPrimary">#000</color>
+   <color name="transparent">#0000FFFF</color>
+
+   <!--Color Icon-->
+   <color name="green">#00D09C</color>
+   <color name="green_light">#E6FBF6</color>
+   <color name="red">#FF585D</color>
+   <color name="red_light">#FFEEEF</color>
+   <color name="lightBrown">#5367FF</color>
+   <color name="lightBrown_light">#EEF0FF</color>
+   <color name="violet">#893168</color>
+   <color name="violet_light">#FFDEF3</color>
+   <color name="yellow">#FFB61B</color>
+   <color name="yellow_light">#FFF9EC</color>
+   <color name="lightBlue">#1DA1F2</color>
+   <color name="lightBlue_light">#E8F6FE</color>
+
+
+</resources>
