@@ -15,6 +15,12 @@
 
     </style>
 
+    <style name="selector_button_two" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/coloronPrimary</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="iconTint">@color/textColor</item>
+    </style>
+
     <style name="modal" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@drawable/bottom_dialog</item>
     </style>

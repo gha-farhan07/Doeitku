@@ -48,7 +48,7 @@ class TransactionAdapter: RecyclerView.Adapter<TransactionAdapter.MyViewHolder>(
 
 
     fun setData(newData: List<IncomeEntities>) {
-        val recipeDiffUtil = com.example.util.DiffUtil(transaction, newData)
+        val recipeDiffUtil = com.example.uang.util.DiffUtil(transaction, newData)
         val diffUtilResult = DiffUtil.calculateDiff(recipeDiffUtil)
         transaction = newData
 
