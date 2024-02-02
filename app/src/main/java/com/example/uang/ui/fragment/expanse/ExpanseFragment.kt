@@ -112,10 +112,7 @@ class ExpanseFragment : Fragment(), View.OnClickListener {
     }
 
 
-    override fun onDestroy() {
-        super.onDestroy()
-        _binding = null
-    }
+
 
     override fun onClick(v: View?) {
         when (v) {
@@ -213,6 +210,11 @@ class ExpanseFragment : Fragment(), View.OnClickListener {
         button.setIconTintResource(R.color.accentColor)
         button.setStrokeColorResource(R.color.accentColor)
         button.setTextColor(ContextCompat.getColor(requireContext(), R.color.accentColor))
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 
 

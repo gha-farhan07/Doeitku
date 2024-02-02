@@ -27,5 +27,35 @@
     <string name="are_you_sure_want_to_delete_the_transaction">Are you sure want to delete the transsaction</string>
     <string name="cancel">Cancel</string>
     <string name="delete">Delete</string>
+    <string name="all">All</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="all_transactions">All Transaction</string>
+    <string name="january">January</string>
+    <string name="december">December</string>
+    <string name="november">November</string>
+    <string name="october">October</string>
+    <string name="september">September</string>
+    <string name="august">Agustus</string>
+    <string name="july">July</string>
+    <string name="june">June</string>
+    <string name="may">May</string>
+    <string name="april">April</string>
+    <string name="march">March</string>
+    <string name="february">February</string>
+    <string name="monthlyBudget">Monthly Budget</string>
+    <string name="your_expenses">Your Expanses</string>
+    <string name="icon">Icon</string>
+    <string name="your_transactions">Your Transaction</string>
+    <string name="settings">Settings</string>
+    <string name="darkmode">Dark Mode</string>
+    <string name="backup_data">Backup Data</string>
+    <string name="share_to_friends">Share</string>
+    <string name="about_us">About Us</string>
+    <string name="simple">Simple</string>
+    <string name="expense_tracking">Expense Income Tracking</string>
+    <string name="we_require_your_google_account_with_google_drive_permission_to_keep_backup_of_all_your_data">Please log in with google account so we can use it for backup also</string>
+    <string name="signup_with_google">Sign up with google account</string>
+    <string name="web_client_id">3753961027-e3qttvsb21srjdd266og43da4j72ub5c.apps.googleusercontent.com</string>
 
 </resources>
