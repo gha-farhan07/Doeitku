@@ -27,25 +27,5 @@
     <string name="are_you_sure_want_to_delete_the_transaction">Are you sure want to delete the transsaction</string>
     <string name="cancel">Cancel</string>
     <string name="delete">Delete</string>
-    <string name="all">All</string>
-    <string name="monthly">Monthly</string>
-    <string name="yearly">Yearly</string>
-    <string name="all_transactions">All Transaction</string>
-    <string name="january">January</string>
-    <string name="december">December</string>
-    <string name="november">November</string>
-    <string name="october">October</string>
-    <string name="september">September</string>
-    <string name="august">Agustus</string>
-    <string name="july">July</string>
-    <string name="june">June</string>
-    <string name="may">May</string>
-    <string name="april">April</string>
-    <string name="march">March</string>
-    <string name="february">February</string>
-    <string name="monthlyBudget">Monthly Budget</string>
-    <string name="your_expenses">Your Expanses</string>
-    <string name="icon">Icon</string>
-    <string name="your_transactions">Your Transaction</string>
 
 </resources>

@@ -1,5 +1,6 @@
 package com.example.uang.repository
 
+import androidx.lifecycle.LiveData
 import com.example.uang.room.dao.TransactionDao
 import com.example.uang.room.entities.IncomeEntities
 import dagger.hilt.android.scopes.ViewModelScoped
@@ -14,6 +15,14 @@ class LocalRepository @Inject constructor(
 
     fun readTransaction(): Flow<List<IncomeEntities>> {
         return transactionDao.readTransaction()
+    }
+
+    fun getMonthlyTransaction(month:Int,Year:Int): Flow<List<IncomeEntities>> {
+        return transactionDao.getMonthlyTransaction(month,Year)
+    }
+
+    fun getYearlyTransaction(year:Int): Flow<List<IncomeEntities>> {
+        return transactionDao.getYearlyTransaction(year)
     }
 
 

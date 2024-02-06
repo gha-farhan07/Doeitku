@@ -20,14 +20,22 @@ class AddTransactionViewModel @Inject constructor(
     val readTransactionData: LiveData<List<IncomeEntities>> =
         repository.readTransaction().asLiveData()
 
+    fun readMonthlyTransactionData(month: Int, year: Int): LiveData<List<IncomeEntities>> =
+        repository.getMonthlyTransaction(month, year).asLiveData()
 
-    fun  insertTransactionData(transactionEntities: IncomeEntities) {
+    fun readYearlyTransactionData(year: Int): LiveData<List<IncomeEntities>> =
+        repository.getYearlyTransaction(year).asLiveData()
+
+
+
+
+    fun insertTransactionData(transactionEntities: IncomeEntities) {
         viewModelScope.launch {
             repository.insertTransactionData(transactionEntities)
         }
     }
 
-    fun deleteTransactionData(id:Int) {
+    fun deleteTransactionData(id: Int) {
         viewModelScope.launch(Dispatchers.IO) {
             repository.deleteTransactionData(id)
 
@@ -39,9 +47,6 @@ class AddTransactionViewModel @Inject constructor(
             repository.updateTransactionData(transaction)
         }
     }
-
-
-
 
 
 }
